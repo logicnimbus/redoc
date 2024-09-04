@@ -14,6 +14,7 @@ import { ApiContentWrap, BackgroundStub, RedocWrap } from './styled.elements';
 
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
+import TunkNavbar from '../TunkNavbar/TunkNavbar';
 
 export interface RedocProps {
   store: AppStore;
@@ -40,6 +41,7 @@ export class Redoc extends React.Component<RedocProps> {
     return (
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
+          <TunkNavbar />
           <OptionsProvider value={options}>
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">

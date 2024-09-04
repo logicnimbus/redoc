@@ -27,7 +27,7 @@ FROM nginx:alpine
 ENV PAGE_TITLE="ReDoc"
 ENV PAGE_FAVICON="favicon.png"
 ENV BASE_PATH=
-ENV SPEC_URL="http://petstore.swagger.io/v2/swagger.json"
+ENV SPEC_URL="https://d3tyi07qgwwvqk.cloudfront.net/tunk.json"
 ENV PORT=80
 ENV REDOC_OPTIONS=
 
