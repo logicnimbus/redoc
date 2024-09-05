@@ -15,6 +15,7 @@ import { ApiContentWrap, BackgroundStub, RedocWrap } from './styled.elements';
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
 import TunkNavbar from '../TunkNavbar/TunkNavbar';
+import TunkFooter from '../TunkFooter/TunkFooter';
 
 export interface RedocProps {
   store: AppStore;
@@ -64,6 +65,7 @@ export class Redoc extends React.Component<RedocProps> {
               <BackgroundStub />
             </RedocWrap>
           </OptionsProvider>
+          <TunkFooter />
         </StoreProvider>
       </ThemeProvider>
     );

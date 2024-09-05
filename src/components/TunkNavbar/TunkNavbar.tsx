@@ -10,8 +10,10 @@ const NavbarWrapper = styled.div`
   background: #fff;
   padding: 1rem 2rem;
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 1rem;
+  max-width: 1920px;
   @media (max-width: 1024px) {
     padding: 1rem;
   }
