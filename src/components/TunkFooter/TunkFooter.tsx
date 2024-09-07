@@ -6,7 +6,7 @@ import { IoLocationOutline } from 'react-icons/io5';
 import { Divider } from 'antd';
 
 const tunkBaseUrl = 'https://tunk.ai';
-
+const tunkCdnUrl = 'https://d3tyi07qgwwvqk.cloudfront.net';
 const FooterWrapper = styled.div`
   background: #fff;
   padding: 1rem 2rem;
@@ -101,6 +101,11 @@ const PolicyWrapperVertical = styled.div`
   }
 `;
 
+const Icon = styled.img`
+  height: 20px;
+  width: 20px;
+`;
+
 function TunkFooter() {
   return (
     <div
@@ -122,19 +127,19 @@ function TunkFooter() {
               gap: '1.5rem',
             }}
           >
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}`}>
               <ListItem>Home</ListItem>
             </Anchor>
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/about-us`}>
               <ListItem>About Us</ListItem>
             </Anchor>
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/pricing`}>
               <ListItem>Pricing</ListItem>
             </Anchor>
-            <Anchor>
+            <Anchor href="https://www.blog.tunk.ai">
               <ListItem>Blog</ListItem>
             </Anchor>
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/contact-us`}>
               <ListItem>Contact Us</ListItem>
             </Anchor>
           </VerticalList>
@@ -145,19 +150,23 @@ function TunkFooter() {
               gap: '.5rem',
             }}
           >
-            <Anchor>
+            <Anchor
+              style={{
+                cursor: 'auto',
+              }}
+            >
               <ListItem>Products</ListItem>
             </Anchor>
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/dashboard`}>
               <ListSubItem>AI Transcription</ListSubItem>
             </Anchor>
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/human-transcription`}>
               <ListSubItem>Human Transcription</ListSubItem>
             </Anchor>
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/anya`}>
               <ListSubItem>Anya</ListSubItem>
             </Anchor>
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/earnings-call`}>
               <ListSubItem>Earnings Call</ListSubItem>
             </Anchor>
           </VerticalList>
@@ -168,7 +177,7 @@ function TunkFooter() {
               gap: '.5rem',
             }}
           >
-            <Anchor>
+            <Anchor href={`${tunkBaseUrl}/#use-cases`}>
               <ListItem>Use Cases</ListItem>
             </Anchor>
             <Anchor>
@@ -202,7 +211,35 @@ function TunkFooter() {
             }}
           >
             <div>
-              <ListItem>Follow us on</ListItem>
+              <ListItem
+                style={{
+                  marginBottom: '0.5rem',
+                }}
+              >
+                Follow us on
+              </ListItem>
+              <div
+                style={{
+                  display: 'flex',
+                  gap: '1rem',
+                }}
+              >
+                <Anchor href="https://www.facebook.com/tunkApp">
+                  <Icon src={`${tunkCdnUrl}/icons/facebook.svg`} />
+                </Anchor>
+                <Anchor href="https://www.instagram.com/tunk_app">
+                  <Icon src={`${tunkCdnUrl}/icons/instagram.svg`} />
+                </Anchor>
+                <Anchor href="https://x.com/tunk_ai">
+                  <Icon src={`${tunkCdnUrl}/icons/twitter.svg`} />
+                </Anchor>
+                <Anchor href="https://www.linkedin.com/showcase/tunk-ai/">
+                  <Icon src={`${tunkCdnUrl}/icons/linkedin.svg`} />
+                </Anchor>
+                <Anchor href="https://medium.com/@social_87723">
+                  <Icon src={`${tunkCdnUrl}/icons/medium.svg`} />
+                </Anchor>
+              </div>
             </div>
             <div>
               <ListItem
@@ -261,7 +298,7 @@ function TunkFooter() {
         }}
       >
         <PolicyWrapperHorizontal>
-          <Anchor>
+          <Anchor href={`${tunkBaseUrl}/terms-of-use`}>
             <ListSubItem>Terms & Conditions</ListSubItem>
           </Anchor>
           <div
@@ -283,7 +320,7 @@ function TunkFooter() {
               background: '#DAE5F2',
             }}
           />
-          <Anchor>
+          <Anchor href={`${tunkBaseUrl}/data-privacy-policy`}>
             <ListSubItem>Privacy Policy</ListSubItem>
           </Anchor>
           <div
@@ -294,16 +331,18 @@ function TunkFooter() {
               background: '#DAE5F2',
             }}
           />
-          <Anchor>Refund Policy</Anchor>
+          <Anchor href={`${tunkBaseUrl}/refund-policy`}>
+            <ListSubItem>Refund Policy</ListSubItem>
+          </Anchor>
         </PolicyWrapperHorizontal>
         <PolicyWrapperVertical className="flex flex-col md:hidden w-full px-4 gap-2">
-          <Anchor>
+          <Anchor href={`${tunkBaseUrl}/terms-of-use`}>
             <ListSubItem>Terms & Conditions</ListSubItem>
           </Anchor>
-          <Anchor>
+          <Anchor href={`${tunkBaseUrl}/data-privacy-policy`}>
             <ListSubItem>Privacy Policy</ListSubItem>
           </Anchor>
-          <Anchor>
+          <Anchor href={`${tunkBaseUrl}/refund-policy`}>
             <ListSubItem>Refund Policy</ListSubItem>
           </Anchor>
           <ListSubItem>
