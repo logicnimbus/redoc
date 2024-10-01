@@ -270,15 +270,12 @@ function TunkFooter() {
               >
                 <IoLocationOutline size={16} />
                 <ListSubItem>
-                  LogicNimbus Private Limited Plot 50,
+                  WeWork 247 Park,
+                  <br /> 13th Floor, Vikhroli Corporate Park,
                   <br />
-                  Bajarang Society, Behind Rajsarathi Soc.
-                  <br />
-                  Vadala Pathardi Road, Indira Nagar Nashik,
-                  <br />
-                  Maharashtra 422009
-                  <br />
-                  India
+                  Hindustan C. Bus Stop, Lal Bahadur Shastri Rd,
+                  <br /> Gandhi Nagar, Vikhroli West, Mumbai,
+                  <br /> MH 400079/83
                 </ListSubItem>
               </div>
             </div>
